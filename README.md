@@ -23,9 +23,6 @@
 
 # 2 grpc
 ```shell script
-python -m grpc_tools.protoc -I ./ --python_out=./ --grpc_python_out=./ compute.proto
-```
-```shell script
 python -m grpc_tools.protoc -I ./ --python_out=./ --grpc_python_out=./ syncindex.proto
 ```
 
