@@ -1,7 +1,9 @@
 # 分布式实时Faiss召回系统
 - 1 概述
-- 2 API
-- 2 部署
+- 2 gRPC
+- 3 API
+- 4 打包
+- 5 部署
 - 参考
 
 # 1 概述
@@ -36,11 +38,15 @@
 python -m grpc_tools.protoc -I ./ --python_out=./ --grpc_python_out=./ syncindex.proto
 ```
 
-# 2 打包
+# 3 API
+
+[Restful API](doc/Restful%20API.md)
+
+# 4 打包
 执行：
 ```shell script
 umake.py
 ```
 
-# 3 部署
+# 5 部署
 部署在docker上。
