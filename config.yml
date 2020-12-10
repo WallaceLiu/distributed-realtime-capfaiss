@@ -1,0 +1,36 @@
+#
+app:
+  host: 0.0.0.0
+  port: 8088
+  root_rc_path: /rc
+#
+env: &env 'product' # pre product
+#
+ducc:
+  root: 'http://ducc-api.co.local/v1'
+  app: 'cap-config'
+  ns: 'cap_faiss'
+  token: '123456'
+  config: 'admin'
+  env: *env
+#
+zk: 'ducc:zk'
+#
+rpc:
+  slave:
+    host: '[::]'
+    port: '50051'
+  master:
+    host: '[::]'
+    port: '50052'
+#
+cache_local: 'ducc:cache_local'
+#
+rc:
+  '101001100': 'ducc:101001100'
+  '101001101': 'ducc:101001101'
+#
+repo:
+  hbase: ~
+  r2m: 'ducc:r2m'
+jss: 'ducc:jss'
