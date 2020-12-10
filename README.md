@@ -6,7 +6,7 @@
 # 1 概述
 分布式实时Faiss召回系统
 
-![架构](doc/image/arc.pngraw=true)
+![架构](doc/image/arc.png?raw=true)
 
 # 2 grpc
 ```shell script
