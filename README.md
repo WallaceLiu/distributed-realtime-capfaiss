@@ -1,10 +1,12 @@
-# cap faiss
+# 分布式实时Faiss召回系统
 - 1 概述
+- 2 API
 - 2 部署
 - 参考
 
 # 1 概述
-分布式实时Faiss召回系统
+原生的Faiss不支持分布式，本文利用S3和Zookeeper实现一个分布式的Faiss系统，
+部署在Docker上。
 
 ![架构](doc/image/arc.png?raw=true)
 
@@ -26,7 +28,11 @@
 python -m grpc_tools.protoc -I ./ --python_out=./ --grpc_python_out=./ syncindex.proto
 ```
 
-# 2 部署
-具体参考 [部署](doc/02.部署.md)
+# 2 打包
+执行：
+```shell script
+umake.py
+```
 
-# 参考
+# 3 部署
+部署在docker上。
