@@ -6,7 +6,7 @@
 # 1 概述
 分布式实时Faiss召回系统
 
-![架构](doc/image/arc.png?raw=true)
+![架构](doc/image/arc1.png?raw=true)
 
 整个Faiss集群外部是四层均衡负载：
 
