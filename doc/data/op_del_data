@@ -1,1 +1,0 @@
-curl http://localhost:8088/rc/del -X POST -H 'content-type:application/json;charset=UTF-8' -d '{"rcId": "101001101", "ids": ["u0", "u1", "u2", "u3", "u4", "u5", "u6", "u7", "u8", "u9"]}'
