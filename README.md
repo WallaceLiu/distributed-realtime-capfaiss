@@ -16,7 +16,7 @@ python -m grpc_tools.protoc -I ./ --python_out=./ --grpc_python_out=./ compute.p
 python -m grpc_tools.protoc -I ./ --python_out=./ --grpc_python_out=./ syncindex.proto
 ```
 
-# 2 sure部署
+# 2 部署
 具体参考 [部署](doc/02.部署.md)
 
 # 参考
