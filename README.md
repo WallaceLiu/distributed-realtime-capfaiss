@@ -16,7 +16,9 @@
 4. 点虚线，若客户端请求到达的是Slave节点，则需要转发给Master节点，完成集群节点的更新 
 
 > 若图片不能正常显示
+>
 > 配置hosts文件
+>
 > 151.101.76.133 raw.githubusercontent.com
 
 # 2 grpc
