@@ -14,7 +14,9 @@ ducc:
   config: 'admin'
   env: *env
 #
-zk: 'ducc:zk'
+zk:
+  elect: "/cap-faiss/master_elect",
+  hosts: "172.25.223.52:2181"
 #
 rpc:
   slave:
@@ -24,13 +26,43 @@ rpc:
     host: '[::]'
     port: '50052'
 #
-cache_local: 'ducc:cache_local'
+cache_local: ~
+cache:
+  ttl: 60
 #
 rc:
-  '101001100': 'ducc:101001100'
-  '101001101': 'ducc:101001101'
+  101001100:
+    add_random: true,
+    dim: 100,
+    extra": null,
+    is_all: false,
+    k: 500,
+    name: "101001100",
+    oss_bucket_name: "sim-model",
+    path: "/index",
+    r2m:
+      item: "cupid-sim-{item}-{model_name}",
+      pin: "cupid-sim-{pin}-{model_name}",
+      req: "cupid-sim-req-{pin}-{model_name}"
+      topn: -1
+  101001101:
+    add_random: true,
+    dim: 100,
+    extra": null,
+    is_all: false,
+    k: 500,
+    name: "101001101",
+    oss_bucket_name: "sim-model",
+    path: "/index",
+    r2m:
+      item: "cupid-sim-{item}-{model_name}",
+      pin: "cupid-sim-{pin}-{model_name}",
+      req: "cupid-sim-req-{pin}-{model_name}"
+      topn: -1
 #
 repo:
   hbase: ~
-  r2m: 'ducc:r2m'
-jss: 'ducc:jss'
+  r2m:
+    host: "127.0.0.1",
+    port: 6379,
+    password: "123456"
