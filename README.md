@@ -45,7 +45,7 @@
 > ``` 
 
 # 3 索引同步gRPC
-索引同步gRPC定义在`protos`里
+索引同步gRPC定义在`protos`里，用如下命令，生成py文件，以便在应用中使用：
 ```shell script
 python -m grpc_tools.protoc -I ./ --python_out=./ --grpc_python_out=./ syncindex.proto
 ```
