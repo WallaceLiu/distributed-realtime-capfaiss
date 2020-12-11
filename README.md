@@ -5,7 +5,7 @@
 - 4 API
 - 5 打包
 - 6 部署
-- 7 存在问题
+- 7 后续
 - 参考
 
 # 1 概述
@@ -62,7 +62,7 @@ python -m grpc_tools.protoc -I ./ --python_out=./ --grpc_python_out=./ syncindex
 # 6 部署
 我部署在Core8、Men24GB的docker上。如果不缓存结果，则TPS=120，TP99=30ms。
 
-# 7 存在问题
+# 7 后续
 1. 召回的数据量，10，100，1000……都有可能，所以，如果使用Restful API的话，并且调用链路太长，
 耗时可能会长，此时，你可以试试gRPC接口。
 2. Faiss消耗CPU资源。
