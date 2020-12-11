@@ -66,3 +66,5 @@ python -m grpc_tools.protoc -I ./ --python_out=./ --grpc_python_out=./ syncindex
 1. 召回的数据量，10，100，1000……都有可能，所以，如果使用Restful API的话，并且调用链路太长，
 耗时可能会长，此时，你可以试试gRPC接口。
 2. Faiss消耗CPU资源。
+3. 若要更多的TPS，采用缓存，分布式系统，要有自己的缓存系统。
+4. 索引同步，可以采用asyncio改写，强化性能。
