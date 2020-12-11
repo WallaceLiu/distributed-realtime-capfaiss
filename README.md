@@ -24,9 +24,11 @@
 # 2 结构
 
 ![结构](doc/image/flow.png?raw=true)
+
 图1 结构
 
 ![更新流程](doc/image/arc.png?raw=true)
+
 图2 索引更新流程
 
 整个Faiss集群外部是四层均衡负载：
