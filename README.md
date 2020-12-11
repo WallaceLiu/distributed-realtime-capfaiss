@@ -44,20 +44,19 @@
 > 151.101.76.133 raw.githubusercontent.com
 > ``` 
 
-# 3 grpc
+# 3 索引同步gRPC
+索引同步gRPC定义在`protos`里
 ```shell script
 python -m grpc_tools.protoc -I ./ --python_out=./ --grpc_python_out=./ syncindex.proto
 ```
 
 # 4 API
+对外公开的是Restful API，当然，也有gRPC接口：
 
 [Restful API](doc/Restful%20API.md)
 
 # 5 打包
-执行：
-```shell script
-umake.py
-```
+执行`umake.py`脚本，会将应用打包到`deploy`目录。
 
 # 6 部署
 部署在docker上。
