@@ -59,4 +59,4 @@ python -m grpc_tools.protoc -I ./ --python_out=./ --grpc_python_out=./ syncindex
 执行`umake.py`脚本，会将应用打包到`deploy`目录。
 
 # 6 部署
-我部署在8 core、24G men的docker上。如果不缓存结果，则TPS大概在100多。
+我部署在Core8、Men24GB的docker上。如果不缓存结果，则TPS大概在100多。
